@@ -1,40 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="/dist/output.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&  display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&  display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Stats preview card component</title>
 
-  Get insights that help your business grow.
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 10px;
+        padding-top: 30px;
+        color: hsla(0, 0%, 100%, 0.26)
+      }
+      .attribution a {
+        color: hsla(288, 100%, 64%, 0.281);
+      }
+    </style>
+  </head>
+  <body class="flex justify-center bg-main-background">
+    <div id="big" class="flex mt-40 w-3/5 h-96">
+      <div id="left" class="bg-card-background rounded-l-xl w-1/2 p-14">
+        <h1 class="text-3xl text-main-heading-stats font-bold pb-8">Get <span class="text-accent">insights</span> that help your business grow.</h1>
+        <p class="text-main-paragraph text-[14px] pb-14 w-[350px]">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div id="numbers" class="flex uppercase gap-12">
+          <div class="flex flex-col">
+            <h2 class="text-xl font-bold text-main-heading-stats">10k+</h2>
+            <p class="text-main-paragraph text-[10px]">companies</p>
+          </div>
+          <div class="flex flex-col">
+            <h2 class="text-xl font-bold text-main-heading-stats">314</h2>
+            <p class="text-main-paragraph text-[10px]">templates</p>
+          </div>
+          <div class="flex flex-col">
+            <h2 class="text-xl font-bold text-main-heading-stats">12m+</h2>
+            <p class="text-main-paragraph text-[10px]">queries</p>
+          </div>
+        </div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Wilou</a>.
+        </div>
+      </div>
+      <div class="rounded-r-xl object-cover w-1/2 bg-accent overflow-hidden">
+        <img src="./images/image-header-desktop.jpg" alt="" class="rounded-r-xl object-cover h-full w-full opacity-70">
+        <!-- <div class="bg-accent w-full h-full rounded-r-xl -translate-y-full opacity-50"></div> -->
+      </div>
+    </div>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
 
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </body>
 </html>
