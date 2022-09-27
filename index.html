@@ -40,15 +40,19 @@
     </style>
   </head>
   <body class="flex justify-center bg-main-background">
-    <div id="big" class="flex mt-40 w-3/5 h-96">
-      <div id="left" class="bg-card-background rounded-l-xl w-1/2 p-14">
-        <h1 class="text-3xl text-main-heading-stats font-bold pb-8">Get <span class="text-accent">insights</span> that help your business grow.</h1>
-        <p class="text-main-paragraph text-[14px] pb-14 w-[350px]">
+    <div id="big" class="flex w-full flex-col mx-6 my-12 lg:m-40 lg:flex-row-reverse lg:h-[510px]">
+      <div class="rounded-t-xl object-fit bg-accent overflow-hidden lg:rounded-r-xl lg:rounded-none lg:w-1/2">
+        <img src="./images/image-header-desktop.jpg" alt="" class="rounded-t-xl lg:rounded-t-none object-cover h-full w-full opacity-70">
+        <!-- <div class="bg-accent w-full h-full rounded-r-xl -translate-y-full opacity-50"></div> -->
+      </div>
+      <div id="left" class=" bg-card-background rounded-b-xl lg:rounded-none lg:rounded-l-xl p-10 flex flex-col text-center gap-6 lg:w-1/2 lg:text-left lg:p-24 lg:pr-28">
+        <h1 class="text-3xl text-main-heading-stats font-bold mb-4">Get <span class="text-accent">insights</span> that help your business grow.</h1>
+        <p class="text-main-paragraph text-[16px] leading-7 lg:mb-10">
           Discover the benefits of data analytics and make better decisions
           regarding revenue, customer experience, and overall efficiency.
         </p>
-        <div id="numbers" class="flex uppercase gap-12">
-          <div class="flex flex-col">
+        <div id="numbers" class=" uppercase flex flex-col gap-5 lg:flex-row lg:justify-between lg:w-full">
+          <div class="">
             <h2 class="text-xl font-bold text-main-heading-stats">10k+</h2>
             <p class="text-main-paragraph text-[10px]">companies</p>
           </div>
@@ -56,7 +60,7 @@
             <h2 class="text-xl font-bold text-main-heading-stats">314</h2>
             <p class="text-main-paragraph text-[10px]">templates</p>
           </div>
-          <div class="flex flex-col">
+          <div class="">
             <h2 class="text-xl font-bold text-main-heading-stats">12m+</h2>
             <p class="text-main-paragraph text-[10px]">queries</p>
           </div>
@@ -67,10 +71,6 @@
             >Frontend Mentor</a
           >. Coded by <a href="#">Wilou</a>.
         </div>
-      </div>
-      <div class="rounded-r-xl object-cover w-1/2 bg-accent overflow-hidden">
-        <img src="./images/image-header-desktop.jpg" alt="" class="rounded-r-xl object-cover h-full w-full opacity-70">
-        <!-- <div class="bg-accent w-full h-full rounded-r-xl -translate-y-full opacity-50"></div> -->
       </div>
     </div>
 
